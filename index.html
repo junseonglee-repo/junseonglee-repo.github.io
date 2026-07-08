@@ -3,9 +3,8 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<!-- ▼ 여기 이름/설명을 본인 것으로 바꾸세요 -->
-<title>Jun Kim — Curriculum Vitae</title>
-<meta name="description" content="Researcher in machine learning, computer vision, and signal processing at ETRI." />
+<title>Jun Seong Lee — Curriculum Vitae</title>
+<meta name="description" content="Jun Seong Lee — Senior Researcher at ETRI and Ph.D. Candidate at KAIST. Deep learning and computer vision for physiological measurement." />
 
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -15,7 +14,7 @@
   :root {
     --accent: #005CA2;        /* ETRI Blue */
     --accent-soft: #e7f0f8;
-    --accent-2: #EB5405;      /* ETRI Orange (액센트 보조) */
+    --accent-2: #EB5405;      /* ETRI Orange */
     --ink: #1a1d21;
     --ink-soft: #4b5158;
     --ink-faint: #8b9299;
@@ -28,24 +27,17 @@
   }
 
   * { box-sizing: border-box; }
-
   html { scroll-behavior: smooth; scroll-padding-top: 72px; }
   @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
 
   body {
-    margin: 0;
-    font-family: var(--sans);
-    color: var(--ink);
-    background: var(--bg);
-    line-height: 1.6;
-    font-size: 16px;
+    margin: 0; font-family: var(--sans); color: var(--ink);
+    background: var(--bg); line-height: 1.6; font-size: 16px;
     -webkit-font-smoothing: antialiased;
   }
-
   a { color: var(--accent); text-decoration: none; }
   a:hover { text-decoration: underline; }
 
-  /* ── Top navigation ───────────────────────────── */
   .nav {
     position: sticky; top: 0; z-index: 50;
     background: rgba(255,255,255,0.88);
@@ -53,106 +45,63 @@
     border-bottom: 1px solid var(--rule);
   }
   .nav-inner {
-    max-width: var(--wrap); margin: 0 auto;
-    padding: 14px 24px;
-    display: flex; align-items: baseline; justify-content: space-between;
-    gap: 16px;
+    max-width: var(--wrap); margin: 0 auto; padding: 14px 24px;
+    display: flex; align-items: baseline; justify-content: space-between; gap: 16px;
   }
-  .nav-name {
-    font-family: var(--serif);
-    font-size: 18px; font-weight: 600; letter-spacing: -0.01em;
-    color: var(--ink);
-  }
+  .nav-name { font-family: var(--serif); font-size: 18px; font-weight: 600; letter-spacing: -0.01em; color: var(--ink); }
   .nav-links { display: flex; gap: 22px; }
-  .nav-links a {
-    font-size: 14px; font-weight: 500; color: var(--ink-soft);
-    letter-spacing: 0.01em;
-  }
+  .nav-links a { font-size: 14px; font-weight: 500; color: var(--ink-soft); letter-spacing: 0.01em; }
   .nav-links a:hover { color: var(--accent); text-decoration: none; }
   .nav-links a.active { color: var(--accent); }
 
-  /* ── Layout ───────────────────────────────────── */
   main { max-width: var(--wrap); margin: 0 auto; padding: 0 24px 96px; }
-
   section { padding-top: 52px; }
 
   .section-title {
-    font-family: var(--serif);
-    font-size: 15px; font-weight: 600;
-    text-transform: uppercase; letter-spacing: 0.14em;
-    color: var(--accent);
-    margin: 0 0 22px;
-    padding-bottom: 8px;
-    border-bottom: 1px solid var(--rule);
+    font-family: var(--serif); font-size: 15px; font-weight: 600;
+    text-transform: uppercase; letter-spacing: 0.14em; color: var(--accent);
+    margin: 0 0 22px; padding-bottom: 8px; border-bottom: 1px solid var(--rule);
   }
 
-  /* ── Hero ─────────────────────────────────────── */
-  .hero {
-    display: grid; grid-template-columns: 168px 1fr; gap: 34px;
-    align-items: center;
-    padding-top: 56px;
-  }
+  .hero { display: grid; grid-template-columns: 168px 1fr; gap: 34px; align-items: center; padding-top: 56px; }
   .photo {
-    width: 168px; height: 168px; border-radius: 14px;
-    background: var(--accent-soft);
+    width: 168px; height: 168px; border-radius: 14px; background: var(--accent-soft);
     display: flex; align-items: center; justify-content: center;
-    color: var(--accent); font-size: 13px; font-weight: 500;
-    letter-spacing: 0.06em; text-align: center;
-    border: 1px solid var(--rule);
-    overflow: hidden;
+    color: var(--accent); font-size: 13px; font-weight: 500; letter-spacing: 0.06em;
+    text-align: center; border: 1px solid var(--rule); overflow: hidden;
   }
-  /* 사진 넣을 때: 위 .photo 안의 텍스트 지우고 <img src="images/profile.jpg" ...> 만 넣으세요 */
   .photo img { width: 100%; height: 100%; object-fit: cover; }
 
-  .hero h1 {
-    font-family: var(--serif);
-    font-size: 38px; font-weight: 600; letter-spacing: -0.02em;
-    margin: 0 0 6px; line-height: 1.1;
-  }
+  .hero h1 { font-family: var(--serif); font-size: 38px; font-weight: 600; letter-spacing: -0.02em; margin: 0 0 8px; line-height: 1.1; }
   .hero .role { font-size: 16px; color: var(--ink-soft); margin: 0 0 2px; }
-  .hero .affil { font-size: 15px; color: var(--ink-faint); margin: 0 0 16px; }
   .hero .role b { color: var(--ink); font-weight: 600; }
+  .hero .affil { font-size: 15px; color: var(--ink-faint); margin: 8px 0 16px; }
 
   .contact { display: flex; flex-wrap: wrap; gap: 8px 18px; font-size: 14px; }
   .contact a { color: var(--ink-soft); display: inline-flex; align-items: center; gap: 6px; }
   .contact a:hover { color: var(--accent); text-decoration: none; }
   .contact svg { width: 15px; height: 15px; }
 
-  /* ── News ─────────────────────────────────────── */
   .news { list-style: none; margin: 0; padding: 0; }
-  .news li {
-    display: grid; grid-template-columns: 92px 1fr; gap: 16px;
-    padding: 7px 0; font-size: 14.5px;
-  }
+  .news li { display: grid; grid-template-columns: 92px 1fr; gap: 16px; padding: 7px 0; font-size: 14.5px; }
   .news .date { color: var(--accent-2); font-variant-numeric: tabular-nums; font-weight: 500; }
   .news .what { color: var(--ink-soft); }
 
-  /* ── Prose ────────────────────────────────────── */
   .prose { color: var(--ink-soft); font-size: 15.5px; margin: 0; }
   .prose b { color: var(--ink); font-weight: 600; }
 
-  /* ── Entry lists (education / experience) ─────── */
-  .entry {
-    display: grid; grid-template-columns: 1fr auto; gap: 6px 20px;
-    padding: 13px 0; border-bottom: 1px solid var(--rule);
-  }
+  .entry { display: grid; grid-template-columns: 1fr auto; gap: 6px 20px; padding: 13px 0; border-bottom: 1px solid var(--rule); }
   .entry:last-child { border-bottom: none; }
   .entry .lead { font-weight: 600; color: var(--ink); font-size: 15.5px; }
   .entry .sub { color: var(--ink-soft); font-size: 14.5px; grid-column: 1; }
   .entry .when { color: var(--ink-faint); font-size: 14px; white-space: nowrap; font-variant-numeric: tabular-nums; }
 
-  /* ── Publications ─────────────────────────────── */
-  .pub {
-    display: grid; grid-template-columns: 150px 1fr; gap: 22px;
-    padding: 18px 0; border-bottom: 1px solid var(--rule);
-  }
+  .pub { display: grid; grid-template-columns: 150px 1fr; gap: 22px; padding: 18px 0; border-bottom: 1px solid var(--rule); }
   .pub:last-child { border-bottom: none; }
   .pub-thumb {
-    width: 150px; height: 96px; border-radius: 8px;
-    background: var(--bg-soft); border: 1px solid var(--rule);
-    display: flex; align-items: center; justify-content: center;
-    color: var(--ink-faint); font-size: 11px; letter-spacing: 0.05em;
-    overflow: hidden;
+    width: 150px; height: 96px; border-radius: 8px; background: var(--bg-soft);
+    border: 1px solid var(--rule); display: flex; align-items: center; justify-content: center;
+    color: var(--ink-faint); font-size: 11px; letter-spacing: 0.05em; overflow: hidden;
   }
   .pub-thumb img { width: 100%; height: 100%; object-fit: cover; }
   .pub-title { font-weight: 600; color: var(--ink); font-size: 16px; margin: 0 0 4px; line-height: 1.35; }
@@ -160,65 +109,36 @@
   .pub-authors .me { color: var(--accent); font-weight: 600; }
   .pub-venue { font-size: 14px; color: var(--ink-faint); font-style: italic; margin: 0 0 8px; }
   .pub-links { display: flex; gap: 14px; font-size: 13px; font-weight: 500; }
+  .pub.no-thumb { grid-template-columns: 1fr; }   /* 썸네일 없이 텍스트만 쓰려면 class="pub no-thumb" */
 
-  /* ── Two-column grids (honors / patents / services) ── */
   .stack { list-style: none; margin: 0; padding: 0; }
-  .stack li {
-    display: grid; grid-template-columns: 1fr auto; gap: 6px 18px;
-    padding: 10px 0; border-bottom: 1px solid var(--rule); font-size: 15px;
-  }
+  .stack li { display: grid; grid-template-columns: 1fr auto; gap: 6px 18px; padding: 10px 0; border-bottom: 1px solid var(--rule); font-size: 15px; }
   .stack li:last-child { border-bottom: none; }
   .stack .when { color: var(--ink-faint); font-size: 14px; white-space: nowrap; font-variant-numeric: tabular-nums; }
   .stack .detail { color: var(--ink-soft); }
 
-  /* ── Projects ─────────────────────────────────── */
   .proj-group + .proj-group { margin-top: 30px; }
-  .proj-group h3 {
-    font-family: var(--sans); font-size: 13px; font-weight: 600;
-    text-transform: uppercase; letter-spacing: 0.08em;
-    color: var(--ink-faint); margin: 0 0 14px;
-  }
-  .proj {
-    display: grid; grid-template-columns: 150px 1fr; gap: 22px;
-    padding: 16px 0; border-bottom: 1px solid var(--rule);
-  }
+  .proj-group h3 { font-family: var(--sans); font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em; color: var(--ink-faint); margin: 0 0 14px; }
+  .proj { display: grid; grid-template-columns: 150px 1fr; gap: 22px; padding: 16px 0; border-bottom: 1px solid var(--rule); }
   .proj:last-child { border-bottom: none; }
-  .proj-thumb {
-    width: 150px; height: 96px; border-radius: 8px;
-    background: var(--bg-soft); border: 1px solid var(--rule);
-    display: flex; align-items: center; justify-content: center;
-    color: var(--ink-faint); font-size: 11px; overflow: hidden;
-  }
+  .proj-thumb { width: 150px; height: 96px; border-radius: 8px; background: var(--bg-soft); border: 1px solid var(--rule); display: flex; align-items: center; justify-content: center; color: var(--ink-faint); font-size: 11px; overflow: hidden; }
   .proj-thumb img { width: 100%; height: 100%; object-fit: cover; }
   .proj-title { font-weight: 600; color: var(--ink); font-size: 15.5px; margin: 0 0 4px; }
   .proj-desc { font-size: 14px; color: var(--ink-soft); margin: 0 0 6px; }
   .proj-meta { font-size: 13px; color: var(--ink-faint); }
 
-  /* ── Skills ───────────────────────────────────── */
   .skills { display: grid; grid-template-columns: 130px 1fr; gap: 10px 20px; font-size: 15px; }
   .skills dt { font-weight: 600; color: var(--ink); }
   .skills dd { margin: 0; color: var(--ink-soft); }
 
-  /* ── CV button ────────────────────────────────── */
-  .cv-btn {
-    display: inline-flex; align-items: center; gap: 9px;
-    background: var(--accent); color: #fff;
-    padding: 11px 22px; border-radius: 9px;
-    font-size: 15px; font-weight: 600;
-  }
+  .cv-btn { display: inline-flex; align-items: center; gap: 9px; background: var(--accent); color: #fff; padding: 11px 22px; border-radius: 9px; font-size: 15px; font-weight: 600; }
   .cv-btn:hover { background: #00487e; text-decoration: none; }
   .cv-note { font-size: 14px; color: var(--ink-faint); margin: 12px 0 0; }
 
-  footer {
-    max-width: var(--wrap); margin: 0 auto; padding: 40px 24px 60px;
-    border-top: 1px solid var(--rule);
-    font-size: 13px; color: var(--ink-faint);
-    display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px;
-  }
+  footer { max-width: var(--wrap); margin: 0 auto; padding: 40px 24px 60px; border-top: 1px solid var(--rule); font-size: 13px; color: var(--ink-faint); display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px; }
 
   :focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 3px; }
 
-  /* ── Mobile ───────────────────────────────────── */
   @media (max-width: 640px) {
     .nav-links { gap: 16px; }
     .nav-name { display: none; }
@@ -241,7 +161,7 @@
 <!-- ════════════════ NAV ════════════════ -->
 <nav class="nav">
   <div class="nav-inner">
-    <span class="nav-name">Jun Kim</span>
+    <span class="nav-name">Jun Seong Lee</span>
     <div class="nav-links">
       <a href="#about">About</a>
       <a href="#publications">Publications</a>
@@ -255,28 +175,30 @@
 
   <!-- ════════════════ HERO ════════════════ -->
   <header class="hero" id="top">
-    <!-- 사진: 아래 텍스트를 지우고 <img src="images/profile.jpg" alt="Jun Kim"> 로 교체 -->
+    <!-- 사진: 아래 텍스트를 지우고 <img src="images/profile.jpg" alt="Jun Seong Lee"> 로 교체 -->
     <div class="photo">PHOTO<br>168×168</div>
 
     <div>
-      <h1>Jun Kim</h1>
-      <p class="role">Researcher, <b>Machine Learning · Computer Vision · Signal Processing</b></p>
-      <p class="affil">ETRI (Electronics and Telecommunications Research Institute), Daejeon, Korea</p>
+      <h1>Jun Seong Lee</h1>
+      <p class="role">Senior Researcher, <b>ETRI</b></p>
+      <p class="role">Ph.D. Candidate, <b>KAIST</b> (Electrical Engineering)</p>
+      <p class="affil">Deep learning &amp; computer vision for physiological measurement · Daejeon, South Korea</p>
 
       <div class="contact">
-        <a href="mailto:you@etri.re.kr">
+        <!-- ▼ 이메일 주소를 본인 것으로 채우세요 -->
+        <a href="mailto:your-email@etri.re.kr">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
           Email
         </a>
-        <a href="https://scholar.google.com/" target="_blank" rel="noopener">
+        <a href="https://scholar.google.com/citations?user=hTDWmFIAAAAJ&hl=en" target="_blank" rel="noopener">
           <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 3 1 9l11 6 9-4.9V17h2V9L12 3zM5 13.2v3.3L12 20l7-3.5v-3.3L12 17l-7-3.8z"/></svg>
           Google Scholar
         </a>
-        <a href="https://github.com/" target="_blank" rel="noopener">
+        <a href="https://github.com/junseonglee-repo" target="_blank" rel="noopener">
           <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2A10 10 0 0 0 2 12c0 4.4 2.9 8.2 6.8 9.5.5.1.7-.2.7-.5v-1.7c-2.8.6-3.4-1.3-3.4-1.3-.5-1.1-1.1-1.4-1.1-1.4-.9-.6.1-.6.1-.6 1 .1 1.5 1 1.5 1 .9 1.5 2.3 1.1 2.9.8.1-.7.3-1.1.6-1.4-2.2-.3-4.6-1.1-4.6-4.9 0-1.1.4-2 1-2.7-.1-.3-.4-1.3.1-2.6 0 0 .8-.3 2.7 1a9.4 9.4 0 0 1 5 0c1.9-1.3 2.7-1 2.7-1 .5 1.3.2 2.3.1 2.6.6.7 1 1.6 1 2.7 0 3.8-2.3 4.6-4.6 4.9.4.3.7.9.7 1.9v2.8c0 .3.2.6.7.5A10 10 0 0 0 22 12 10 10 0 0 0 12 2z"/></svg>
           GitHub
         </a>
-        <a href="https://www.linkedin.com/" target="_blank" rel="noopener">
+        <a href="https://www.linkedin.com/in/jun-seong-lee-bb78b0337" target="_blank" rel="noopener">
           <svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM9 9h3.8v1.7h.05c.53-1 1.8-2 3.7-2 3.96 0 4.7 2.6 4.7 6V21h-4v-5.3c0-1.3 0-2.9-1.8-2.9s-2 1.4-2 2.8V21H9z"/></svg>
           LinkedIn
         </a>
@@ -288,10 +210,9 @@
   <section id="news">
     <h2 class="section-title">News</h2>
     <ul class="news">
-      <!-- 최신순으로. 날짜 형식은 자유 (예: 2026.03) -->
-      <li><span class="date">2026.06</span><span class="what">Paper on IR-based remote PPG submitted to <b>[Venue]</b>.</span></li>
-      <li><span class="date">2026.03</span><span class="what">Started research on rPPG with smart glasses at ETRI.</span></li>
-      <li><span class="date">2025.11</span><span class="what">Presented <b>[제목]</b> at <b>[학회/워크숍]</b>.</span></li>
+      <li><span class="date">2026.06</span><span class="what">Our paper <b>LQ-rPPG</b> was published in <b>Expert Systems with Applications</b>.</span></li>
+      <li><span class="date">2024.02</span><span class="what">Started the Ph.D. program at <b>KAIST</b>, Urban Robotics Lab (Prof. Hyun Myung).</span></li>
+      <!-- 새 소식은 이 위에 최신순으로 추가하세요 -->
     </ul>
   </section>
 
@@ -299,12 +220,13 @@
   <section id="about">
     <h2 class="section-title">About</h2>
     <p class="prose">
-      I am a researcher at <b>ETRI</b> working on machine learning, computer vision, and
-      biosignal processing. My current focus is <b>IR-based remote photoplethysmography (rPPG)</b>
-      for pulse estimation from wearable devices such as smart glasses. I am broadly interested in
-      robust signal recovery under real-world illumination, synthetic data augmentation, and
-      attention-based models for physiological sensing.
-      <!-- ▲ 여기를 본인 소개로 자유롭게 교체 -->
+      I am a <b>Senior Researcher at ETRI</b> and a <b>Ph.D. candidate in Electrical Engineering at KAIST</b>
+      (Urban Robotics Lab, advised by Prof. Hyun Myung). My research centers on <b>vision-based human
+      understanding</b> — in particular <b>remote physiological measurement (rPPG)</b>, biosignal
+      analysis, and human mesh representation. I work on deep learning and computer vision methods for
+      robust, non-contact estimation of physiological signals from video, including label-efficient
+      learning and signal recovery under real-world illumination.
+      <!-- ▲ 원하는 문장으로 자유롭게 다듬으세요 -->
     </p>
   </section>
 
@@ -312,14 +234,19 @@
   <section id="education">
     <h2 class="section-title">Education</h2>
     <div class="entry">
-      <div class="lead">Ph.D. / M.S. in [전공]</div>
-      <div class="when">2018 – 2023</div>
-      <div class="sub">[대학교], [연구실/지도교수]</div>
+      <div class="lead">Ph.D. in Electrical Engineering</div>
+      <div class="when">2024 – Present</div>
+      <div class="sub">KAIST — Urban Robotics Lab (Advisor: Prof. Hyun Myung)</div>
     </div>
     <div class="entry">
-      <div class="lead">B.S. in [전공]</div>
-      <div class="when">2014 – 2018</div>
-      <div class="sub">[대학교]</div>
+      <div class="lead">M.S. in Electrical Engineering</div>
+      <div class="when">2018 – 2019</div>
+      <div class="sub">POSTECH (Pohang University of Science and Technology)</div>
+    </div>
+    <div class="entry">
+      <div class="lead">B.S. in Electrical Engineering</div>
+      <div class="when">2017</div>
+      <div class="sub">Pusan National University</div>
     </div>
   </section>
 
@@ -327,14 +254,19 @@
   <section id="experience">
     <h2 class="section-title">Work Experience</h2>
     <div class="entry">
-      <div class="lead">Researcher</div>
-      <div class="when">2023 – Present</div>
-      <div class="sub">ETRI, Daejeon, Korea — ML / Computer Vision / Signal Processing</div>
+      <div class="lead">Senior Researcher</div>
+      <div class="when">2020 – Present</div>
+      <div class="sub">ETRI (Electronics and Telecommunications Research Institute), Daejeon</div>
     </div>
     <div class="entry">
-      <div class="lead">[직책]</div>
-      <div class="when">20XX – 20XX</div>
-      <div class="sub">[기관/회사] — [담당 업무]</div>
+      <div class="lead">Researcher</div>
+      <div class="when">2019 – 2020</div>
+      <div class="sub">KETI (Korea Electronics Technology Institute)</div>
+    </div>
+    <div class="entry">
+      <div class="lead">Researcher</div>
+      <div class="when">2019</div>
+      <div class="sub">Asan Medical Center</div>
     </div>
   </section>
 
@@ -342,14 +274,19 @@
   <section id="publications">
     <h2 class="section-title">Publications</h2>
 
+    <!-- 최신순. 논문을 추가할 땐 .pub 블록을 복사해서 내용만 바꾸세요.
+         썸네일 이미지가 없으면 <div class="pub"> 를 <div class="pub no-thumb"> 로 바꾸고
+         그 안의 <div class="pub-thumb">FIGURE</div> 줄을 지우면 텍스트만 깔끔하게 나옵니다. -->
+
     <div class="pub">
       <div class="pub-thumb">FIGURE</div>
       <div>
-        <p class="pub-title">[논문 제목을 여기에]</p>
-        <p class="pub-authors"><span class="me">Jun Kim</span>, Coauthor A, Coauthor B</p>
-        <p class="pub-venue">Conference / Journal Name, 2026</p>
+        <p class="pub-title">LQ-rPPG: A Label-Quantized Coarse-to-Fine Learning Framework for Remote Physiological Measurement</p>
+        <p class="pub-authors"><span class="me">JS Lee</span>, S Noh, C Sung, H Myung</p>
+        <p class="pub-venue">Expert Systems with Applications, 2026</p>
         <div class="pub-links">
-          <a href="#">Paper</a><a href="#">Code</a><a href="#">Project</a>
+          <!-- ▼ 실제 링크로 교체 -->
+          <a href="#">Paper</a><a href="#">Code</a><a href="#">Video</a>
         </div>
       </div>
     </div>
@@ -357,22 +294,122 @@
     <div class="pub">
       <div class="pub-thumb">FIGURE</div>
       <div>
-        <p class="pub-title">[두 번째 논문 제목]</p>
-        <p class="pub-authors">Coauthor A, <span class="me">Jun Kim</span>, Coauthor C</p>
-        <p class="pub-venue">Conference / Journal Name, 2025</p>
+        <p class="pub-title">LSTC-rPPG: Long Short-Term Convolutional Network for Remote Photoplethysmography</p>
+        <p class="pub-authors"><span class="me">JS Lee</span>, G Hwang, M Ryu, SJ Lee</p>
+        <p class="pub-venue">IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2023</p>
         <div class="pub-links">
-          <a href="#">Paper</a><a href="#">arXiv</a>
+          <a href="#">Paper</a>
         </div>
       </div>
     </div>
+
+    <div class="pub">
+      <div class="pub-thumb">FIGURE</div>
+      <div>
+        <p class="pub-title">Weighted Knowledge Distillation of Attention-LRCN for Recognizing Affective States from PPG Signals</p>
+        <p class="pub-authors">J Choi, G Hwang, <span class="me">JS Lee</span>, M Ryu, SJ Lee</p>
+        <p class="pub-venue">Expert Systems with Applications, 2023</p>
+        <div class="pub-links">
+          <a href="#">Paper</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="pub">
+      <div class="pub-thumb">FIGURE</div>
+      <div>
+        <p class="pub-title">Attention-LRCN: Long-Term Recurrent Convolutional Network for Stress Detection from Photoplethysmography</p>
+        <p class="pub-authors">J Choi, <span class="me">JS Lee</span>, M Ryu, G Hwang, SJ Lee</p>
+        <p class="pub-venue">IEEE Int'l Symposium on Medical Measurements and Applications (MeMeA), 2022</p>
+        <div class="pub-links">
+          <a href="#">Paper</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="pub">
+      <div class="pub-thumb">FIGURE</div>
+      <div>
+        <p class="pub-title">Machine Learning–Based Automatic Rating for Cardinal Symptoms of Parkinson Disease</p>
+        <p class="pub-authors">KW Park, EJ Lee, <span class="me">JS Lee</span>, J Jeong, N Choi, S Jo, M Jung, JY Do, et al.</p>
+        <p class="pub-venue">Neurology, 2021</p>
+        <div class="pub-links">
+          <a href="#">Paper</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="pub">
+      <div class="pub-thumb">FIGURE</div>
+      <div>
+        <p class="pub-title">Fuzzy Support Vector Machine-Based Personalizing Method to Address the Inter-Subject Variance Problem of Physiological Signals in a Driver Monitoring System</p>
+        <p class="pub-authors">M Choi, M Seo, <span class="me">JS Lee</span>, SW Kim</p>
+        <p class="pub-venue">Artificial Intelligence in Medicine, 2020</p>
+        <div class="pub-links">
+          <a href="#">Paper</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="pub">
+      <div class="pub-thumb">FIGURE</div>
+      <div>
+        <p class="pub-title">QRS Detection Method Based on Fully Convolutional Networks for Capacitive Electrocardiogram</p>
+        <p class="pub-authors"><span class="me">JS Lee</span>, SJ Lee, M Choi, M Seo, SW Kim</p>
+        <p class="pub-venue">Expert Systems with Applications, 2019</p>
+        <div class="pub-links">
+          <a href="#">Paper</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="pub">
+      <div class="pub-thumb">FIGURE</div>
+      <div>
+        <p class="pub-title">Fetal QRS Detection Based on Convolutional Neural Networks in Noninvasive Fetal Electrocardiogram</p>
+        <p class="pub-authors"><span class="me">JS Lee</span>, M Seo, SW Kim, M Choi</p>
+        <p class="pub-venue">Int'l Conference on Frontiers of Signal Processing (ICFSP), 2018</p>
+        <div class="pub-links">
+          <a href="#">Paper</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="pub">
+      <div class="pub-thumb">FIGURE</div>
+      <div>
+        <p class="pub-title">Adaptive Noise Reduction Algorithm to Improve R Peak Detection in ECG Measured by Capacitive ECG Sensors</p>
+        <p class="pub-authors">M Seo, M Choi, <span class="me">JS Lee</span>, SW Kim</p>
+        <p class="pub-venue">Sensors, 2018</p>
+        <div class="pub-links">
+          <a href="#">Paper</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="pub">
+      <div class="pub-thumb">FIGURE</div>
+      <div>
+        <p class="pub-title">Adaptive Noise Reduction of Multichannel Signals Obtained by Capacitive ECG Sensors</p>
+        <p class="pub-authors">M Seo, <span class="me">JS Lee</span>, SW Kim, M Choi</p>
+        <p class="pub-venue">Int'l Conference on Frontiers of Signal Processing (ICFSP), 2018</p>
+        <div class="pub-links">
+          <a href="#">Paper</a>
+        </div>
+      </div>
+    </div>
+
+    <p class="prose" style="margin-top:18px; font-size:14px;">
+      Full list and citation metrics on <a href="https://scholar.google.com/citations?user=hTDWmFIAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a>.
+    </p>
   </section>
 
   <!-- ════════════════ HONORS ════════════════ -->
   <section id="honors">
     <h2 class="section-title">Honors &amp; Awards</h2>
     <ul class="stack">
-      <li><span class="detail">[수상 내역]</span><span class="when">2025</span></li>
-      <li><span class="detail">[장학금 / 표창]</span><span class="when">2022</span></li>
+      <!-- 수상 내역을 채우세요. 없으면 이 섹션 전체(<section id="honors">...</section>)를 지워도 됩니다. -->
+      <li><span class="detail">[수상 / 장학 내역]</span><span class="when">20XX</span></li>
     </ul>
   </section>
 
@@ -380,7 +417,8 @@
   <section id="patents">
     <h2 class="section-title">Patents</h2>
     <ul class="stack">
-      <li><span class="detail">[특허 제목], 출원/등록번호</span><span class="when">2024</span></li>
+      <!-- 특허를 채우세요. 없으면 이 섹션 전체를 지워도 됩니다. -->
+      <li><span class="detail">[특허 제목], 출원/등록번호</span><span class="when">20XX</span></li>
     </ul>
   </section>
 
@@ -388,8 +426,8 @@
   <section id="services">
     <h2 class="section-title">Services</h2>
     <ul class="stack">
-      <li><span class="detail">Reviewer, [학회/저널]</span><span class="when">2025</span></li>
-      <li><span class="detail">평가위원 (Evaluator), 정부 R&amp;D 과제</span><span class="when">2024 – 2025</span></li>
+      <!-- 학회 리뷰, 정부 과제 평가위원 등을 채우세요. 없으면 이 섹션 전체를 지워도 됩니다. -->
+      <li><span class="detail">Reviewer, [학회 / 저널]</span><span class="when">20XX</span></li>
     </ul>
   </section>
 
@@ -398,25 +436,13 @@
     <h2 class="section-title">Projects</h2>
 
     <div class="proj-group">
-      <h3>Work Projects</h3>
+      <h3>Research Projects</h3>
       <div class="proj">
         <div class="proj-thumb">IMAGE</div>
         <div>
-          <p class="proj-title">IR-based rPPG with Smart Glasses</p>
+          <p class="proj-title">IR-based Remote PPG with Smart Glasses</p>
           <p class="proj-desc">Pulse estimation from infrared video using spatial-attention models and physics-based data augmentation.</p>
-          <p class="proj-meta">ETRI · 2023 – Present</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="proj-group">
-      <h3>Personal Projects</h3>
-      <div class="proj">
-        <div class="proj-thumb">IMAGE</div>
-        <div>
-          <p class="proj-title">[개인 프로젝트 이름]</p>
-          <p class="proj-desc">[한 줄 설명]</p>
-          <p class="proj-meta"><a href="#">GitHub</a> · 2024</p>
+          <p class="proj-meta">ETRI · Ongoing</p>
         </div>
       </div>
     </div>
@@ -428,7 +454,7 @@
     <dl class="skills">
       <dt>Languages</dt><dd>Python, C/C++, MATLAB</dd>
       <dt>ML / DL</dt><dd>PyTorch, NumPy, scikit-learn</dd>
-      <dt>Domains</dt><dd>Computer Vision, Biosignal Processing, rPPG/PPG, Signal Processing</dd>
+      <dt>Domains</dt><dd>Computer Vision, Physiological Measurement (rPPG/PPG), Biosignal Processing, Human Mesh Representation</dd>
       <dt>Tools</dt><dd>Git, Linux, Docker</dd>
     </dl>
   </section>
@@ -436,7 +462,7 @@
   <!-- ════════════════ CV ════════════════ -->
   <section id="cv">
     <h2 class="section-title">Curriculum Vitae</h2>
-    <!-- cv.pdf 파일을 저장소에 올리고 아래 href 를 맞추세요 -->
+    <!-- cv.pdf 파일을 저장소 루트에 올리면 이 버튼이 바로 작동합니다 -->
     <a class="cv-btn" href="cv.pdf" target="_blank" rel="noopener">
       <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3v12m0 0 4-4m-4 4-4-4"/><path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2"/></svg>
       Download CV (PDF)
@@ -447,12 +473,11 @@
 </main>
 
 <footer>
-  <span>© 2026 Jun Kim</span>
+  <span>© 2026 Jun Seong Lee</span>
   <span>Built with GitHub Pages</span>
 </footer>
 
 <script>
-  // 스크롤 위치에 따라 상단 내비게이션 활성 표시
   const sections = ['about', 'publications', 'projects', 'cv']
     .map(id => document.getElementById(id)).filter(Boolean);
   const links = Object.fromEntries(
